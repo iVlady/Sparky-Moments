@@ -18,9 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundBlue" translatesAutoresizingMaskIntoConstraints="NO" id="deX-Ej-RN6">
-                                <rect key="frame" x="-677" y="-282" width="1438" height="1361"/>
-                            </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="cjb-n8-bST">
                                 <rect key="frame" x="50" y="618" width="314" height="125"/>
                                 <subviews>
@@ -33,12 +30,12 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                             <fontDescription key="titleFontDescription" name="Futura-Bold" family="Futura" pointSize="21"/>
-                                            <color key="baseForegroundColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="baseForegroundColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
                                     </button>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7V-C7-rm8">
                                         <rect key="frame" x="0.0" y="75" width="314" height="50"/>
-                                        <color key="backgroundColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="gIK-5E-cov"/>
                                         </constraints>
@@ -68,19 +65,15 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tT5-PD-ONX"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="JTq-AR-q8X" firstAttribute="top" secondItem="tT5-PD-ONX" secondAttribute="top" constant="174" id="1qw-s1-vws"/>
-                            <constraint firstItem="deX-Ej-RN6" firstAttribute="top" secondItem="tT5-PD-ONX" secondAttribute="top" constant="-326" id="5jH-oi-aKy"/>
                             <constraint firstItem="cjb-n8-bST" firstAttribute="leading" secondItem="tT5-PD-ONX" secondAttribute="leading" constant="50" id="GTE-8d-qyI"/>
-                            <constraint firstItem="tT5-PD-ONX" firstAttribute="trailing" secondItem="deX-Ej-RN6" secondAttribute="trailing" constant="-347" id="KhS-qm-ZVw"/>
-                            <constraint firstItem="deX-Ej-RN6" firstAttribute="leading" secondItem="tT5-PD-ONX" secondAttribute="leading" constant="-677" id="N2z-tO-UNc"/>
                             <constraint firstItem="tT5-PD-ONX" firstAttribute="bottom" secondItem="cjb-n8-bST" secondAttribute="bottom" constant="119" id="REs-LJ-REh"/>
                             <constraint firstItem="JTq-AR-q8X" firstAttribute="leading" secondItem="tT5-PD-ONX" secondAttribute="leading" constant="5" id="a7c-FH-1If"/>
                             <constraint firstItem="tT5-PD-ONX" firstAttribute="trailing" secondItem="JTq-AR-q8X" secondAttribute="trailing" constant="5" id="cS0-DE-XeW"/>
                             <constraint firstItem="Kob-LK-Luh" firstAttribute="top" secondItem="JTq-AR-q8X" secondAttribute="bottom" constant="59.5" id="kC0-qO-ndg"/>
                             <constraint firstItem="tT5-PD-ONX" firstAttribute="trailing" secondItem="cjb-n8-bST" secondAttribute="trailing" constant="50" id="r7a-eW-aeJ"/>
-                            <constraint firstItem="tT5-PD-ONX" firstAttribute="bottom" secondItem="deX-Ej-RN6" secondAttribute="bottom" constant="-217" id="tTV-Ql-YGd"/>
                             <constraint firstItem="cjb-n8-bST" firstAttribute="centerX" secondItem="Kob-LK-Luh" secondAttribute="centerX" id="tYg-wX-fty"/>
                             <constraint firstItem="Kob-LK-Luh" firstAttribute="leading" secondItem="tT5-PD-ONX" secondAttribute="leading" constant="139" id="wGI-Ho-pXi"/>
                         </constraints>
@@ -106,7 +99,7 @@
                                 <rect key="frame" x="20" y="84" width="302" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="32"/>
-                                <color key="textColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign up to get started!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYN-pt-Fyx">
@@ -127,7 +120,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j5E-Uq-qNa">
@@ -141,7 +134,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLq-pa-s86">
@@ -155,12 +148,12 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <color key="textColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="textColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wh-wx-AnM">
                                 <rect key="frame" x="40" y="554" width="334" height="76"/>
-                                <color key="backgroundColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="76" id="gJi-7l-5fa"/>
                                 </constraints>
@@ -183,7 +176,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign In">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                    <color key="baseForegroundColor" red="0.60784316059999999" green="0.78431367870000002" blue="0.89019608500000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseForegroundColor" red="0.2588235438" green="0.38431376220000002" blue="0.96470588450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
@@ -355,7 +348,6 @@
         </designable>
     </designables>
     <resources>
-        <image name="backgroundBlue" width="270" height="270"/>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="celebration" width="512" height="512"/>
         <image name="person" catalog="system" width="128" height="117"/>
