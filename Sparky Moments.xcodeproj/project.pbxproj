@@ -17,6 +17,7 @@
 		B6CE6EF227187BFF00007C6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6CE6EF127187BFF00007C6E /* Assets.xcassets */; };
 		B6CE6EF42718864C00007C6E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6EF32718864C00007C6E /* SignUpViewController.swift */; };
 		B6CE6EF62718C18800007C6E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6EF52718C18800007C6E /* SignInViewController.swift */; };
+		B6CE6EF92718C8A700007C6E /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CE6EF82718C8A700007C6E /* Extentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B6CE6EF127187BFF00007C6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6CE6EF32718864C00007C6E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		B6CE6EF52718C18800007C6E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		B6CE6EF82718C8A700007C6E /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 		B6CE6EE82716F53700007C6E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6CE6EF82718C8A700007C6E /* Extentions.swift */,
 				B6CE6ED52716F50300007C6E /* SceneDelegate.swift */,
 				B6CE6ED32716F50300007C6E /* AppDelegate.swift */,
 				B6CE6EE12716F50500007C6E /* Info.plist */,
@@ -186,6 +189,7 @@
 				B6CE6EF42718864C00007C6E /* SignUpViewController.swift in Sources */,
 				B6CE6ED82716F50300007C6E /* ViewController.swift in Sources */,
 				B6CE6EF02718792500007C6E /* StartPageViewController.swift in Sources */,
+				B6CE6EF92718C8A700007C6E /* Extentions.swift in Sources */,
 				B6CE6ED42716F50300007C6E /* AppDelegate.swift in Sources */,
 				B6CE6EEC2716FA9900007C6E /* CustomTabBarViewController.swift in Sources */,
 				B6CE6ED62716F50300007C6E /* SceneDelegate.swift in Sources */,

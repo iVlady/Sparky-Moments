@@ -17,12 +17,17 @@ class SignInViewController: UIViewController {
         
         emailTextField.layer.borderWidth = 2
         emailTextField.layer.borderColor = UIColor.lightGray.cgColor
+        emailTextField.setLeftView(image: UIImage.init(systemName: "envelope")!, width: 30, height: 20)
+        emailTextField.tintColor = .lightGray
         
         passwordTextField.layer.borderWidth = 2
         passwordTextField.layer.borderColor = UIColor.lightGray.cgColor
+        passwordTextField.setLeftView(image: UIImage.init(systemName: "key")!, width: 20, height: 30)
+        passwordTextField.tintColor = .lightGray
 
-        
     }
+    
+    
     
 
     
