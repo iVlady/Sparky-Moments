@@ -21,3 +21,23 @@ extension UITextField {
     }
     
 }
+
+
+extension UIViewController {
+    
+    func notificationAlert (title: String, message: String) {
+        let alertVC = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let blurVisualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+        blurVisualEffectView.frame = view.bounds
+        
+        let okButton = UIAlertAction(title: "OK", style: .default) { _ in
+            blurVisualEffectView.removeFromSuperview()
+        }
+        
+        self.view.addSubview(blurVisualEffectView)
+        alertVC.addAction(okButton)
+        self.present(alertVC, animated: true, completion: nil)
+        
+    }
+    
+}

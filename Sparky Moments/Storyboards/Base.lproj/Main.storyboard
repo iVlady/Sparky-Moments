@@ -4,7 +4,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
-        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -163,6 +162,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="signUpButtonPressed:" destination="sM7-zA-ueV" eventType="touchUpInside" id="W3C-Ni-lbi"/>
+                                            <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="Wxx-vG-svq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBE-qL-ndb">
@@ -215,7 +215,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5W-ga-NFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3175.36231884058" y="-719.19642857142856"/>
+            <point key="canvasLocation" x="-1988" y="-1012"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="eWb-9a-AVg">
@@ -261,7 +261,9 @@
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="signInButtonPressed:" destination="ucB-Jb-31i" eventType="touchUpInside" id="vBd-yQ-phm"/>
                                             <action selector="signUpButtonPressed:" destination="sM7-zA-ueV" eventType="touchUpInside" id="MUw-gT-rWy"/>
+                                            <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="FKq-7k-LKX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHg-jp-xbB">
@@ -330,119 +332,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0f-nm-XmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2297.1014492753625" y="-719.19642857142856"/>
+            <point key="canvasLocation" x="-1988" y="-1922"/>
         </scene>
-        <!--Custom Tab Bar View Controller-->
-        <scene sceneID="qAE-5p-7T5">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="55R-zJ-5Sm" customClass="CustomTabBarViewController" customModule="Sparky_Moments" customModuleProvider="target" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="96x-Wt-a0F">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.74901962280000001" green="0.87843137979999997" blue="0.94509804249999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <color key="selectedImageTintColor" systemColor="systemOrangeColor"/>
-                        <tabBarAppearance key="standardAppearance">
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        </tabBarAppearance>
-                    </tabBar>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="iUg-we-Voy"/>
-                        <segue destination="jzV-R9-Fyf" kind="relationship" relationship="viewControllers" id="teO-Rc-RCC"/>
-                        <segue destination="WZF-Oe-ufN" kind="relationship" relationship="viewControllers" id="dek-bp-2NW"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ee6-DW-6mH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="29" y="-600"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="hjA-KY-w54">
-            <objects>
-                <viewController id="jzV-R9-Fyf" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nZr-DS-gVD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQj-XO-Dkk">
-                                <rect key="frame" x="157" y="398" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="DPz-Vu-hVm"/>
-                                    <constraint firstAttribute="height" constant="100" id="OqV-ss-Pt8"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="vdI-vp-0FQ"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="TQj-XO-Dkk" firstAttribute="centerX" secondItem="nZr-DS-gVD" secondAttribute="centerX" id="4FT-4T-K0w"/>
-                            <constraint firstItem="TQj-XO-Dkk" firstAttribute="centerY" secondItem="nZr-DS-gVD" secondAttribute="centerY" id="kCd-Pk-NJR"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" id="ttA-V3-wWm">
-                        <color key="badgeColor" red="0.88235294819999999" green="0.38823530080000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="H9l-kJ-fJu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="158.70535714285714"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sparky_Moments" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ehz-nO-JG1">
-                                <rect key="frame" x="157" y="356.5" width="100" height="100"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="1WR-i8-mYC"/>
-                                    <constraint firstAttribute="height" constant="100" id="PsV-Pj-wOe"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yc-ns-dsr">
-                                <rect key="frame" x="155" y="146" width="104" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="Ehz-nO-JG1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="53C-fx-DJv"/>
-                            <constraint firstItem="Ehz-nO-JG1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ppz-Ev-d6k"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" id="SMl-AM-doa">
-                        <imageReference key="image" image="books.vertical" catalog="system" symbolScale="large" renderingMode="hierarchical">
-                            <hierarchicalColors>
-                                <color red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
-                        <color key="badgeColor" red="0.88235294819999999" green="0.38823530080000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-762.31884057971024" y="158.70535714285714"/>
-        </scene>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="s0Y-hy-7qT">
             <objects>
-                <viewController id="WZF-Oe-ufN" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mainVC" modalPresentationStyle="fullScreen" id="WZF-Oe-ufN" customClass="mainViewController" customModule="Sparky_Moments" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2cn-UT-k0k">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -465,44 +360,48 @@
                             <constraint firstItem="0Kf-L1-a7P" firstAttribute="centerY" secondItem="2cn-UT-k0k" secondAttribute="centerY" id="XgE-6T-v7C"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" id="G26-Wt-ciH">
-                        <imageReference key="image" image="person" catalog="system" symbolScale="large" renderingMode="hierarchical">
-                            <hierarchicalColors>
-                                <color red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color systemColor="secondaryLabelColor"/>
-                                <color systemColor="tertiaryLabelColor"/>
-                            </hierarchicalColors>
-                        </imageReference>
-                        <color key="badgeColor" red="0.88235294819999999" green="0.38823530080000002" blue="0.30196079609999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </tabBarItem>
+                    <navigationItem key="navigationItem" id="Jmb-gj-K2P">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="rectangle.portrait.and.arrow.right.fill" catalog="system" id="RjE-d6-UDD" userLabel="signOut">
+                            <connections>
+                                <action selector="signOutButtonPressed:" destination="WZF-Oe-ufN" id="toD-o4-2bg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0a3-6b-lkP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="836" y="159"/>
+            <point key="canvasLocation" x="200" y="-1410"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vxe-8Q-Lu2">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="wEA-wK-vxp" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Tkt-Sy-sbj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lmK-XM-vDf">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WZF-Oe-ufN" kind="relationship" relationship="rootViewController" id="tKR-jx-9Yz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8nr-JQ-96T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-770" y="-1410"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="I0y-LX-NJQ"/>
-        <segue reference="ecM-Kh-tlp"/>
+        <segue reference="Wxx-vG-svq"/>
+        <segue reference="5HV-ac-flt"/>
+        <segue reference="xCO-wE-8PQ"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="107"/>
         <image name="bulb" width="512" height="512"/>
-        <image name="person" catalog="system" width="128" height="117"/>
-        <systemColor name="secondaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiaryLabelColor">
-            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tertiarySystemGroupedBackgroundColor">

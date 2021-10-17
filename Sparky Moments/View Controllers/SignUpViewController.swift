@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class SignUpViewController: UIViewController {
 
@@ -14,6 +15,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var underView: UIView!
+    
+    let segueId = "mainVC"
     
     
     override func viewDidLoad() {
@@ -46,6 +49,27 @@ class SignUpViewController: UIViewController {
     
 
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
+        guard let email = emailTextField.text,
+              let fullName = fullNameTextField.text,
+              let password = passwordTextField.text,
+              email != "",
+              fullName != "",
+              password != ""
+        else {
+            notificationAlert(title: "Wrong", message: "Fill all fields")
+            return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { [weak self] user, error in
+            if error != nil || user == nil {
+                self?.notificationAlert(title: "Error", message: "Some error occured")
+                print(error!.localizedDescription)
+            }
+            else {
+                self?.performSegue(withIdentifier: (self?.segueId)!, sender: nil)
+            }
+            
+        }
         
     }
     
