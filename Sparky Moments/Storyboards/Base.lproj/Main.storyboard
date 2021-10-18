@@ -162,7 +162,6 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="signUpButtonPressed:" destination="sM7-zA-ueV" eventType="touchUpInside" id="W3C-Ni-lbi"/>
-                                            <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="Wxx-vG-svq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WBE-qL-ndb">
@@ -211,11 +210,12 @@
                         <outlet property="passwordTextField" destination="HLq-pa-s86" id="aJJ-uo-A9V"/>
                         <outlet property="signUpButton" destination="8wh-wx-AnM" id="nIr-wU-Fl5"/>
                         <outlet property="underView" destination="jZE-U4-TVA" id="JBf-ZY-ZvE"/>
+                        <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="CL4-MQ-Pz2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B5W-ga-NFT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1988" y="-1012"/>
+            <point key="canvasLocation" x="-1988" y="-1021"/>
         </scene>
         <!--Sign In-->
         <scene sceneID="eWb-9a-AVg">
@@ -263,7 +263,6 @@
                                         <connections>
                                             <action selector="signInButtonPressed:" destination="ucB-Jb-31i" eventType="touchUpInside" id="vBd-yQ-phm"/>
                                             <action selector="signUpButtonPressed:" destination="sM7-zA-ueV" eventType="touchUpInside" id="MUw-gT-rWy"/>
-                                            <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="FKq-7k-LKX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHg-jp-xbB">
@@ -328,6 +327,7 @@
                         <outlet property="passwordTextField" destination="s2d-SL-ew4" id="PVC-h0-BlQ"/>
                         <outlet property="signInButton" destination="8I0-0C-4AA" id="cxL-qm-Bsb"/>
                         <outlet property="underView" destination="o5H-Yn-2Di" id="1Me-RA-9eP"/>
+                        <segue destination="wEA-wK-vxp" kind="show" identifier="mainVC" id="p22-SO-Y2i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z0f-nm-XmN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -394,7 +394,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Wxx-vG-svq"/>
+        <segue reference="p22-SO-Y2i"/>
         <segue reference="5HV-ac-flt"/>
         <segue reference="xCO-wE-8PQ"/>
     </inferredMetricsTieBreakers>
